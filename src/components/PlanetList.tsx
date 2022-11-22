@@ -35,8 +35,8 @@ const PlanetList = () => {
 								<RocketTrailImage className="rocket-trail" />
 							</div>
 							<p style={{ color: "#68417c", fontWeight: "bold" }}>Planet name: {planet.pl_name}</p>{" "}
-							<p>Year of discovery: {planet.disc_year}</p>
-							<p>Light days away: {planet.pl_eqt || 100}</p>
+							<p style={{ color: "white" }}>Year of discovery: {planet.disc_year}</p>
+							<p style={{ color: "white" }}>Light days away: {planet.pl_eqt || 100}</p>
 							<Button
 								variant="contained"
 								color="secondary"
