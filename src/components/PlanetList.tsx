@@ -30,7 +30,7 @@ const PlanetList = () => {
 						}}
 					>
 						<CardContent>
-							<div>
+							<div style={{ position: "relative" }}>
 								<RocketImage className="rocket" />
 								<RocketTrailImage className="rocket-trail" />
 							</div>
