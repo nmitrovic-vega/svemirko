@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "@material-ui/core";
+import { ThemeProvider, Typography } from "@material-ui/core";
 import { theme } from "./theme/theme";
 import PlanetList from "./components/PlanetList";
 import { Button } from "@material-ui/core";
@@ -27,6 +27,9 @@ function App() {
 						path="/"
 						element={
 							<div className="section section-first">
+								<Typography variant="h1" style={{ color: "white", marginTop: "150px" }}>
+									Svemirko.rs
+								</Typography>
 								<Link
 									to="rocket"
 									onMouseEnter={handlePrefetch}
@@ -42,7 +45,7 @@ function App() {
 										color="secondary"
 										style={{ margin: "auto", color: "white", textDecoration: "none" }}
 									>
-										Go to Rocket List Page
+										Go to Flights Page
 									</Button>
 								</Link>
 								<img src={astronaut} className="astronaut" alt="astronaut" />
