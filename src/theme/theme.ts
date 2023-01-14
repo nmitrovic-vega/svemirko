@@ -11,4 +11,23 @@ export const theme = createTheme({
 			contrastText: "#000",
 		},
 	},
+	typography: {
+		allVariants: {
+			fontFamily: "'Francois One', sans-serif",
+			textTransform: "none",
+		},
+	},
+	components: {
+		MuiButton: {
+			styleOverrides: {
+				root: {
+					fontWeight: 600,
+					borderRadius: "50px",
+					background: "red",
+					color: "white",
+					fontSize: "14rem",
+				},
+			},
+		},
+	},
 });
