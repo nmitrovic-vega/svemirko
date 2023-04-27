@@ -1,5 +1,11 @@
 import styled from "@emotion/styled";
 import cardBackground from "../../assets/images/White_Shapes.png";
+import planetListBackground from "../../assets/images/space-background.jpg";
+
+export const PlanetListWrapper = styled.div`
+	background-image: url(${planetListBackground});
+	min-height: 100vh;
+`;
 
 export const PlanetCard = styled.div`
 	position: relative;

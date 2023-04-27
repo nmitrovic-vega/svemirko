@@ -4,8 +4,6 @@ import { ThemeProvider, Typography, Button } from "@material-ui/core";
 import { mutate } from "swr";
 import { theme } from "./theme/theme";
 import PlanetList from "./components/PlanetList/PlanetList";
-import astronaut from "./assets/images/astronaut.png";
-import RocketLogo from "./components/RocketLogo/RocketLogo";
 import "./App.css";
 
 function App() {
@@ -26,35 +24,34 @@ function App() {
 						path="/"
 						element={
 							<div className="section">
-								<RocketLogo />
-								<Typography variant="h1" className="title" style={{ color: "white", marginTop: "250px" }}>
+								<Typography variant="h1" className="title" style={{ position: "relative", color: "white" }}>
 									Svemirko.rs
 								</Typography>
 								<Link
 									to="rocket"
-									onMouseEnter={handlePrefetch}
 									style={{
 										display: "block",
-										margin: "140px auto",
+										margin: "20px 0 50px 0",
 										textAlign: "center",
 										textDecoration: "none",
+										fontWeight: "bold",
 									}}
 								>
 									<Button
 										variant="contained"
+										onMouseEnter={handlePrefetch}
 										color="secondary"
 										style={{
 											margin: "auto",
 											color: "white",
 											textDecoration: "none",
-											borderRadius: "10px",
+											borderRadius: "10rem",
 											padding: "15px 20px",
 										}}
 									>
-										RESERVE A FLIGHT
+										EXPLORE
 									</Button>
 								</Link>
-								<img src={astronaut} className="astronaut" alt="astronaut" />
 							</div>
 						}
 					/>
